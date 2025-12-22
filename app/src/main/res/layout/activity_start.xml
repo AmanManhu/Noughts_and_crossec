@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/ic_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity">
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_bot"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="bot"
+        android:textColor="@color/blue"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_player"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/tovari_sans_1"
+        android:textSize="40sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_player"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_margin="30dp"
+        android:text="Player"
+        android:textSize="40sp"
+        android:textColor="@color/blue"
+
+        android:fontFamily="@font/tovari_sans_1"
+        app:layout_constraintEnd_toStartOf="@id/btn_bot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="100dp"
+        android:id="@+id/btn_3x3"
+        android:fontFamily="@font/tovari_sans_1"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_player"
+        app:layout_constraintEnd_toStartOf="@id/btn_4x4"
+        android:text="3x3"
+        android:textSize="40sp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_4x4"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="@color/blue"
+
+        android:fontFamily="@font/tovari_sans_1"
+        android:text="4x4"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_3x3"
+        app:layout_constraintEnd_toStartOf="@id/btn_5x5"
+        app:layout_constraintStart_toEndOf="@id/btn_3x3"
+        app:layout_constraintTop_toTopOf="@+id/btn_3x3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_5x5"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textColor="@color/blue"
+
+        android:fontFamily="@font/tovari_sans_1"
+        android:text="5x5"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_4x4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_4x4"
+        app:layout_constraintTop_toTopOf="@+id/btn_4x4" />
+    <com.google.android.material.button.MaterialButton
+        android:visibility="gone"
+        android:layout_width="166dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="start"
+        android:fontFamily="@font/tovari_sans_1"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_4x4"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="START"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:textStyle="bold|italic"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="70dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
