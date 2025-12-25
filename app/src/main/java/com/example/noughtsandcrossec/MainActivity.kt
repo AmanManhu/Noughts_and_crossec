@@ -335,6 +335,14 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+        binding.ivSetting.setOnClickListener {
+            if (binding.cardViewStyle.visibility == View.VISIBLE){
+                binding.cardViewStyle.visibility = View.GONE
+            } else{
+                binding.cardViewStyle.visibility = View.VISIBLE
+            }
+
+        }
        // setOnclickListener(binding.card1)
     }
 
@@ -360,13 +368,13 @@ class MainActivity : AppCompatActivity() {
         return add
     }
 
-    fun text(player1: TextView, player2: TextView, num: Int) {
-        if (num == 1) {
+    fun text(player1: TextView, player2: TextView, counter: Int) {
+        if (counter % 2 ==1) {
             player1.text = "Player1"
             player2.text = "Your Hode"
         } else {
-            player2.text = "Your Hode"
-            player1.text = "Player2"
+            player2.text = "Player2"
+            player1.text = "Your Hode"
         }
 
     }
@@ -404,6 +412,7 @@ class MainActivity : AppCompatActivity() {
         binding.card15.setImageResource(R.drawable.ic_1)
         binding.card16.setImageResource(R.drawable.ic_1)
     }
+
 }
 //    fun setOnclickListener(view: View): View{
 //        return view

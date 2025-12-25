@@ -6,4 +6,5 @@
     <color name="red">#FF0000</color>
     <color name="whiteblue">#00BCD4</color>
     <color name="whiteLightCyan">#E0FFFF</color>
+    <color name="bg">#6507DC</color>
 </resources>
